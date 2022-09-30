@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pattern"
-    >
-
+    tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
@@ -17,6 +16,7 @@
         app:tabSelectedTextColor="@color/white"
         app:tabBackground="@drawable/tab_background"
         app:tabMode="scrollable"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
     <ProgressBar
@@ -34,6 +34,5 @@
         app:layout_constraintTop_toBottomOf="@id/tab_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
